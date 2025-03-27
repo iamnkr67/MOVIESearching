@@ -99,7 +99,7 @@ function MoviePage() {
             {movie.Language || "N/A"}
           </p>
 
-          <Link to={`/}`} className="block mt-4">
+          <Link to={"/"} className="block mt-4">
             <button className="w-full bg-blue-500 hover:bg-blue-600 text-white font-semibold py-2 px-4 rounded-lg transition duration-200">
               Back to Home
             </button>
