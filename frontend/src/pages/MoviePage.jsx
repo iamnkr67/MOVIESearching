@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { useParams } from "react-router-dom";
+import { useParams, Link } from "react-router-dom"; // ✅ Import Link properly
 import axios from "axios";
 
 const API_KEY = "296dbc59";
@@ -16,6 +16,7 @@ function MoviePage() {
         const response = await axios.get(
           `https://www.omdbapi.com/?apikey=${API_KEY}&i=${id}`,
         );
+
         if (response.data.Response === "True") {
           setMovie(response.data);
         } else {
@@ -99,7 +100,8 @@ function MoviePage() {
             {movie.Language || "N/A"}
           </p>
 
-          <Link to={"/"} className="block mt-4">
+          {/* Back to Home button */}
+          <Link to="/" className="block mt-4">
             <button className="w-full bg-blue-500 hover:bg-blue-600 text-white font-semibold py-2 px-4 rounded-lg transition duration-200">
               Back to Home
             </button>
