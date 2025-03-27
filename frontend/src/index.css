@@ -1,0 +1,7 @@
+@import "tailwindcss";
+
+:root {
+    background: linear-gradient(135deg, #0f0f0f, #1a1a1a, #232526);
+  color: #e0f2fe; 
+    font-family:cursive;
+}
