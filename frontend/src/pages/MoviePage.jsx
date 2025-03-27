@@ -95,32 +95,10 @@ function MoviePage() {
             {movie.Runtime || "N/A"}
           </p>
           <p className="text-lg text-gray-200">
-            🎬 <span className="font-semibold">Awards:</span>{" "}
-            {movie.Awards || "N/A"}
-          </p>
-          <p className="text-lg text-gray-200">
             🌐 <span className="font-semibold">Language:</span>{" "}
             {movie.Language || "N/A"}
           </p>
-          <p className="text-lg text-gray-200">
-            🌐 <span className="font-semibold">Country:</span>{" "}
-            {movie.Country || "N/A"}
-          </p>
-          <p className="text-lg text-gray-200">
-            🎞️ <span className="font-semibold">Type:</span>{" "}
-            {movie.Type || "N/A"}
-          </p>
 
-          <a
-            href={`https://www.imdb.com/title/${movie.imdbID}`}
-            target="_blank"
-            rel="noreferrer"
-            className="block w-full"
-          >
-            <button className="w-full bg-blue-500 hover:bg-blue-600 text-white font-semibold py-2 px-4 rounded-lg transition duration-200">
-              🎥 View on IMDB
-            </button>
-          </a>
           <Link to={`/}`} className="block mt-4">
             <button className="w-full bg-blue-500 hover:bg-blue-600 text-white font-semibold py-2 px-4 rounded-lg transition duration-200">
               Back to Home

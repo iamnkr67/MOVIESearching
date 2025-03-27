@@ -11,9 +11,9 @@ function MovieCard({ movie }) {
       />
 
       <div className="mt-4 space-y-2">
-        <h3 className="text-lg font-semibold text-gray-800">{movie.Title}</h3>
-        <p className="text-sm text-gray-600">📅 Year: {movie.Year}</p>
-        <p className="text-sm text-gray-500">🎬 IMDB ID: {movie.imdbID}</p>
+        <h3 className="text-lg font-semibold text-gray-200">{movie.Title}</h3>
+        <p className="text-sm text-gray-200">📅 Year: {movie.Year}</p>
+        <p className="text-sm text-gray-200">🎬 IMDB ID: {movie.imdbID}</p>
       </div>
 
       <Link to={`/movies/${movie.imdbID}`} className="block mt-4">
